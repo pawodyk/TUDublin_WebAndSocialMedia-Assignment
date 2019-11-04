@@ -2,3 +2,12 @@
     height: 48px;
     width: 64px;
 }
+
+.banner {
+    height: calc(100vh - 74px - 60px);
+}
+
+.main_footer {
+    height: 60px;
+    position: sticky;
+}
