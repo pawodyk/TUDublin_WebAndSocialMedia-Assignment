@@ -1,6 +1,16 @@
 .bg_img_home {
-    background-image: radial-gradient(rgb(0, 0, 0, 0.0), rgba(0, 0, 0, 0.8)), url("../img/background.jpg");
-    background-position: 0 -500px;
+    background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/background.jpg");
+    background-size: cover;
+}
+
+.bg_img_about {
+    background-image: url("../img/bg_about.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom -100px;
+
+    
 }
 
 .bg_transparent {
@@ -8,5 +18,5 @@
 }
 
 .bg_semi_trans {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(53, 53, 53, 0.75);
 }

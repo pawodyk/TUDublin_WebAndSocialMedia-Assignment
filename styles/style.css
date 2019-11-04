@@ -1,13 +1,28 @@
+body {
+    background-color: rgb(64, 64, 64);
+}
+
 .img_logo {
     height: 48px;
     width: 64px;
 }
 
 .banner {
-    height: calc(100vh - 74px - 60px);
+    min-height: calc(100vh - 74px - 60px);
 }
 
 .main_footer {
     height: 60px;
+}
+
+.footer_sticky_bottom {
     position: sticky;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.page {
+    height: calc(100vh - 74px - 60px);
 }
