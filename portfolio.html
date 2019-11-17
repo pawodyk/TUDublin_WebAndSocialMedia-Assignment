@@ -8,21 +8,23 @@
     <title>Wodyk Freelance Web development</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles\style.css">
+    <link rel="stylesheet" href="./styles/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/backgrounds.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
 </head>
 
 <body>
-    <header>
+    <header class="sticky-top">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img class="img_logo" src="img/logo.png" alt="Wodyk freelance web development">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav ml-md-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
@@ -30,20 +32,21 @@
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About me</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contactus.html">Contact</a>
-                        </li>
                         <li class="nav-item dropdown active">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Portfolio
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="projects/project1.html">Project 1</a>
-                                <a class="dropdown-item" href="projects/project2.html">Project 2</a>
-                                <a class="dropdown-item" href="projects/project3.html">Project 3</a>
+                                <a class="dropdown-item" href="portfolio.html">All Projects<span class="sr-only">(current)</span></a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="portfolio.html">View All <span class="sr-only">(current)</span></a>
+                                <a class="dropdown-item" href="projects/project1.html">GetIT UK</a>
+                                <a class="dropdown-item" href="projects/project2.html">Open Cookbook</a>
+                                <a class="dropdown-item" href="projects/project3.html">Web Technologies Website</a>
+
                             </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -52,14 +55,72 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Portfolio</h1>
-        <div class="page"></div>
-        <div class="page"></div>
-    </main>
-    <footer class="main_footer footer_sticky_bottom mt-auto py-3 bg-dark">
+    <main class="bg_img_portfolio banner">
         <div class="container">
-            <span class="text-muted">made by pwodyk</span>
+            <div class="row">
+                <div class="col pb-3 bg_semi_trans rounded">
+                    <h1 class="py-2 display-4 text-light text-center ">My Portfolio:</h1>
+                    <div id="carouselExampleFade" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="./projects/project1.html">
+                                    <img src="./img/GetIt.jpg" class="d-block w-100 " alt="GetIT UK - website showcase">
+                                </a>
+                                <div class="carousel-caption d-none d-sm-block bg_semi_trans">
+                                    <h5>GetIT UK</h5>
+                                    <p>Excellent page for jobseaking IT proffesionals. Uses adzuna API to get up-to-date jobs from the web.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="./projects/project2.html">
+                                    <img src="./img/OpenCookbook.jpg" class="d-block w-100" alt="Open Cookbook - website showcase">
+                                </a>
+                                <div class="carousel-caption d-none d-sm-block bg_semi_trans">
+                                    <h5>Open Cookbook</h5>
+                                    <p>Online cookbook allowing user to submit their recipes. This websites uses the online database and flask templating abilities to render html code.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="projects/project3.html">
+                                    <img src="./img/webtech.jpg" class="d-block w-100" alt="Web Technologies page - website showcase">
+                                </a>
+                                <div class="carousel-caption d-none d-sm-block bg_semi_trans">
+                                    <h5>Web technologies</h5>
+                                    <p>My Personal website made for my course at TU Dublin.<br>This Page showcase different technologies used in web development.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="main_footer" class="footer_sticky_bottom mt-auto py-1 py-md-3 text-muted">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <p class="text-center text-sm-left">&copy;Wodyk's Website</p>
+                </div>
+                <div class="col-12 col-sm-6 d-flex">
+                    <h5 class="d-none d-sm-block">Find me on:</h5>
+                    <div class="social mx-auto ml-lg-2 ">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/pwodyk" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/pawelwodyk" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://stackoverflow.com/cv/pwodyk" target="_blank" rel="noopener noreferrer"><i class="fab fa-stack-overflow"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 

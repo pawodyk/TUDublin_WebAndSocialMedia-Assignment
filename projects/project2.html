@@ -8,14 +8,16 @@
     <title>Wodyk Freelance Web development</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../styles/backgrounds.css">
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
 </head>
 
 <body>
-    <header>
+    <header class="sticky-top">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="../index.html">
                     <img class="img_logo" src="../img/logo.png" alt="Wodyk freelance web development">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,20 +32,20 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../about.html">About me</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../contactus.html">Contact</a>
-                        </li>
                         <li class="nav-item dropdown active">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Portfolio
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="project1.html">Project 1</a>
-                                <a class="dropdown-item" href="project2.html">Project 2 <span class="sr-only">(current)</span></a>
-                                <a class="dropdown-item" href="project3.html">Project 3</a>
-                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="../portfolio.html">View All</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="project1.html">GetIT UK</a>
+                                <a class="dropdown-item" href="project2.html">Open Cookbook <span class="sr-only">(current)</span></a>
+                                <a class="dropdown-item" href="project3.html">Web Technologies Website</a>
                             </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contactus.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -52,14 +54,59 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Project 2</h1>
-        <div class="page"></div>
-        <div class="page"></div>
-    </main>
-    <footer class="main_footer footer_sticky_bottom mt-auto py-3 bg-dark">
+    <main class="bg_img_portfolio banner">
         <div class="container">
-            <span class="text-muted">made by pwodyk</span>
+            <div class="row">
+                <div class="col">
+                    <div class="showcase bg text-light">
+                        <div class="image-container">
+                            <img class="img-fluid" src="../img/OpenCookbook.jpg" alt="Open Cookbook - website showcase">
+                            <div class="image-overlay">
+                                <div class="button-wrapper mr-2">
+                                    <a href="https://open-cookbook-milestone.herokuapp.com/" target="_blank" title="Visit the website">
+                                        <div class="button">
+                                            <i class="fas fa-door-open"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="button-wrapper">
+                                    <a href="https://github.com/pwodyk/CI_MilestoneProject3" target="_blank" title="View source code">
+                                        <div class="button">
+                                            <i class="fab fa-github"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-container">
+                            <h2>Open Cookbook</h2>
+                            <p class="lead pb-2">This Page is a cookbook that hold the recipes the users enter.The recipes are stored in mongoDB and the page is dynamically rendered using flask and jinja based on the data passed from database</p>
+                            <p class="lead">It allows for an easy navigation and simplicity. Providing such features as search option and sorting recipes. the editing and deletion is made to look consistent with the recipe page for best user interaction.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer id="main_footer" class="footer_sticky_bottom mt-auto py-1 py-md-3 text-muted">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <p class="text-center text-sm-left">&copy;Wodyk's Website</p>
+                </div>
+                <div class="col-12 col-sm-6 d-flex">
+                    <h5 class="d-none d-sm-block">Find me on:</h5>
+                    <div class="social mx-auto ml-lg-2 ">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/pwodyk" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/pawelwodyk" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://stackoverflow.com/cv/pwodyk" target="_blank" rel="noopener noreferrer"><i class="fab fa-stack-overflow"></i></a>
+                    </div>
+                </div>
+            </div>  
         </div>
     </footer>
 

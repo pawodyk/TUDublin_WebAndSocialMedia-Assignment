@@ -8,15 +8,16 @@
     <title>Wodyk Web Development | About me</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles/backgrounds.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/backgrounds.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
 </head>
 
 <body>
-    <header>
+    <header class="sticky-top">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img class="img_logo" src="img/logo.png" alt="Wodyk freelance web development">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,22 +30,20 @@
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="about.html">About me <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="about.html">About me<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="portfolio.html">All Projects</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="projects/project1.html">GetIT UK</a>
+                                <a class="dropdown-item" href="projects/project2.html">Open Cookbook</a>
+                                <a class="dropdown-item" href="projects/project3.html">Web Technologies Website</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contactus.html">Contact</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Portfolio
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="projects/project1.html">Project 1</a>
-                                <a class="dropdown-item" href="projects/project2.html">Project 2</a>
-                                <a class="dropdown-item" href="projects/project3.html">Project 3</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="portfolio.html">View All</a>
-                            </div>
                         </li>
                     </ul>
                 </div>
@@ -54,22 +53,149 @@
     </header>
 
     <main>
-        <section class="page container bg_img_about">
+        <section class="page container-fluid bg_img_about">
             <div class="row h-100">
-                <aside class="col-12 col-md-6 offset-md-6 col-lg-4 offset-lg-8 bg_semi_trans text-light">
+                <aside class="col-12 col-md-6 offset-md-6 col-lg-4 offset-lg-8 bg_semi_trans text-light py-5 py-sm-1">
                     <h1 class=" mt-5 display-4">About Me</h1>
-                    <p class="pb-3 lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi impedit consequatur deleniti, tempore ut maiores possimus quaerat suscipit, minima accusamus et vitae culpa soluta libero quibusdam odit animi repudiandae beatae.</p>
-                    <p class="lead"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia fuga maiores aspernatur, ad, consequuntur officia laboriosam dolorum inventore dolor ex rerum et, nesciunt facilis vel sapiente hic voluptate illum deleniti.</p>
+                    <p class="pb-md-3 lead">Hello my name is Pawel Wodyk. I am a free lance web developer based in Ireland. I make modern, responsive websites for businesses around the world.</p>
+                    <p class="lead d-none d-sm-inline"> I am also a certified associate programmer with broad range of skills acquired throughout my diverse past work experience and education. I am highly motivated and diligent person, always looking for opportunity to learn something new and improve my current skills.</p>
                 </aside>
             </div>
-            
+
         </section>
-        
-        
+
+        <section class="container bg-light d-flex align-items-stretch justify-content-around">
+            <div class="row p-4">
+                <div class="col-12 col-md-6 col-xl-4 p-3">
+                    <div class="row no-gutters border rounded mb-2 shadow-sm box">
+                        <div class="col-lg-12 col-4 py-3 px-2 d-flex justify-content-center align-items-center align-items-md-start">
+                            <div class="p-2 icon_frame">
+                                <i class="fas fa-star icon"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-8 py-3 px-2 pt-lg-0 d-flex justify-content-center text-center">
+                            <h3 class="mb-0">State of the art</h3>
+                        </div>
+                        <div class="col-12 px-4 text-justify">
+                            <p>Each website I make is state of the art and provide best user experience. I use the newest web technologies and make my pages to be easy to maintain.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 p-3">
+                    <div class="row no-gutters border rounded mb-2 shadow-sm box">
+                        <div class="col-lg-12 col-4 py-3 px-2 d-flex justify-content-center align-items-center align-items-md-start">
+                            <div class="p-2 icon_frame">
+                                <i class="fas fa-heart icon"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-8 py-3 px-2 pt-lg-0 d-flex justify-content-center text-center">
+                            <h3 class="mb-0">Made with love</h3>
+                        </div>
+                        <div class="col-12 px-4 text-justify">
+                            <p>I love what I'm doing and as such I always put 100% of my skills and knowledge to make each page beautiful and unique</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 p-3">
+                    <div class="row no-gutters border rounded mb-2 shadow-sm box">
+                        <div class="col-lg-12 col-4 py-3 px-2 d-flex justify-content-center align-items-center align-items-md-start">
+                            <div class="p-2 icon_frame">
+                                <i class="fas fa-user-tie icon"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-8 py-3 px-2 pt-lg-0 d-flex justify-content-center text-center">
+                            <h3 class="mb-0">Professional</h3>
+                        </div>
+                        <div class="col-12 px-4 text-justify">
+                            <p>I am always professional. I value your time and money, and will always work to make your experience as pleasant as possible, always with your business goals in mind.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 p-3">
+                    <div class="row no-gutters border rounded mb-2 shadow-sm box">
+                        <div class="col-lg-12 col-4 py-3 px-2 d-flex justify-content-center align-items-center align-items-md-start">
+                            <div class="p-2 icon_frame">
+                                <i class="fas fa-bullhorn icon"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-8 py-3 px-2 pt-lg-0 d-flex justify-content-center text-center">
+                            <h3 class="mb-0">Digital impact</h3>
+                        </div>
+                        <div class="col-12 px-4 text-justify">
+                            <p>My pages are designed to make your business stand out on the internet, and to help you make your digital impact.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 p-3">
+                    <div class="row no-gutters border rounded mb-2 shadow-sm box">
+                        <div class="col-lg-12 col-4 py-3 px-2 d-flex justify-content-center align-items-center align-items-md-start">
+                            <div class="p-2 icon_frame">
+                                <i class="fas fa-mobile-alt icon"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-8 py-3 px-2 pt-lg-0 d-flex justify-content-center text-center">
+                            <h3 class="mb-0">Responsive design</h3>
+                        </div>
+                        <div class="col-12 px-4 text-justify">
+                            <p>My pages look great on every device from desktop to mobile. They will scale with the resolution and provide best user experience regardless of the device used.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 p-3">
+                    <div class="row no-gutters border rounded mb-2 shadow-sm box">
+                        <div class="col-lg-12 col-4 py-3 px-2 d-flex justify-content-center align-items-center align-items-md-start">
+                            <div class="p-2 icon_frame">
+                                <i class="fas fa-hand-holding-usd icon"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-8 py-3 px-2 pt-lg-0 d-flex justify-content-center text-center">
+                            <h3 class="mb-0">Value for money</h3>
+                        </div>
+                        <div class="col-12 px-4 text-justify">
+                            <p>My websites are reasonably priced and affordable for every pocket. If you wish to hear more please <a href="contactus.html" class="text-body">send me a message</a> and we can discuss personalized pricing for your website.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
+        <section class="container-fluid page bg_img_skills d-flex justify-content-center align-items-center">
+            <div class="row bg_skills_grad px-5 py-4 m-sm-5">
+                <div class="col-12 pb-4 d-none d-sm-block">
+                    <h2 class="skills_heading">Technologies I use</h2>
+                </div>
+                <div class="col-12 d-flex skill_icons_wrapper">
+                    <div class="skill"><span title="HTML5"><i class="fab fa-html5"></i></span></div>
+                    <div class="skill"><span title="CSS3"><i class="fab fa-css3-alt"></i></span></div>
+                    <div class="skill"><span title="SASS & SCSS"><i class="fab fa-sass"></i></span></div>
+                    <div class="skill"><span title="JavaScript"><i class="fab fa-js"></i></span></div>
+                    <div class="skill"><span title="Java"><i class="fab fa-java"></i></i></span></div>
+                    <div class="skill"><span title="Python including Python frameworks: flask and django"><i class="fab fa-python"></i></span></div>
+                    <div class="skill"><span title="Databases like: mySQL, SQL Server, mongoDB"><i class="fas fa-database"></i></span></div>
+                    <div class="skill"><span title="git"><i class="fab fa-git-alt"></i></span></div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="main_footer footer_sticky_bottom mt-auto py-3 bg-dark">
+    
+    <footer id="main_footer" class="footer_sticky_bottom mt-auto py-1 py-md-3 text-muted">
         <div class="container">
-            <span class="text-muted">made by pwodyk</span>
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <p class="text-center text-sm-left">&copy;Wodyk's Website</p>
+                </div>
+                <div class="col-12 col-sm-6 d-flex">
+                    <h5 class="d-none d-sm-block">Find me on:</h5>
+                    <div class="social mx-auto ml-lg-2 ">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/pwodyk" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/pawelwodyk" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://stackoverflow.com/cv/pwodyk" target="_blank" rel="noopener noreferrer"><i class="fab fa-stack-overflow"></i></a>
+                    </div>
+                </div>
+            </div>  
         </div>
     </footer>
 

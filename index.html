@@ -8,15 +8,16 @@
     <title>Wodyk Freelance Web development</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles/backgrounds.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/backgrounds.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img class="img_logo" src="img/logo.png" alt="Wodyk freelance web development">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,20 +32,18 @@
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About me</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="portfolio.html">All Projects</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="projects/project1.html">GetIT UK</a>
+                                <a class="dropdown-item" href="projects/project2.html">Open Cookbook</a>
+                                <a class="dropdown-item" href="projects/project3.html">Web Technologies Website</a>
+                            </div>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contactus.html">Contact</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Portfolio
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="projects/project1.html">Project 1</a>
-                                <a class="dropdown-item" href="projects/project2.html">Project 2</a>
-                                <a class="dropdown-item" href="projects/project3.html">Project 3</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="portfolio.html">View All</a>
-                            </div>
                         </li>
                     </ul>
                 </div>
@@ -55,7 +54,7 @@
 
     <main class="banner bg_img_home py-4">
         <div class="container pt-5">
-            <div class="jumbotron">
+            <div class="jumbotron bg_trans_grad text-light">
                 <h1 class="display-4 text-center pb-3">Hello, I make websites!</h1>
                 <p class="lead">My name is Pawel and I am freelance web developer. I have a broad experience in website design and I can help you make your digital impact by creating beautiful and functional website for you or your business. </p>
                 <hr class="my-4">
@@ -66,9 +65,23 @@
             </div>
         </div>
     </main>
-    <footer class="main_footer footer_sticky_bottom mt-auto py-3 bg-dark">
+    <footer id="main_footer" class="footer_sticky_bottom mt-auto py-1 py-md-3 text-muted">
         <div class="container">
-            <span class="text-muted">made by pwodyk</span>
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <p class="text-center text-sm-left">&copy;Wodyk's Website</p>
+                </div>
+                <div class="col-12 col-sm-6 d-flex">
+                    <h5 class="d-none d-sm-block">Find me on:</h5>
+                    <div class="social mx-auto ml-lg-2 ">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/pwodyk" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/pawelwodyk" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://stackoverflow.com/cv/pwodyk" target="_blank" rel="noopener noreferrer"><i class="fab fa-stack-overflow"></i></a>
+                    </div>
+                </div>
+            </div>  
         </div>
     </footer>
 

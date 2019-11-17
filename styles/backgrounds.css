@@ -1,3 +1,11 @@
+body {
+    background-color: #222222;
+}
+
+.bg {
+    background-color: #222222;
+}
+
 .bg_img_home {
     background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/background.jpg");
     background-size: cover;
@@ -7,9 +15,25 @@
     background-image: url("../img/bg_about.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: bottom -100px;
+    background-position: center bottom 15%;
+    background-attachment: fixed;
+}
 
+.bg_img_skills {
+    background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/skills.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg_img_portfolio {
+    background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/bg_portfolio.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg_img_contactus {
+    background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/bg_contactus.jpg");
+    background-size: cover;
     
 }
 
@@ -19,4 +43,38 @@
 
 .bg_semi_trans {
     background-color: rgba(53, 53, 53, 0.75);
+}
+
+.bg_trans_grad {
+    background: linear-gradient(180deg, #30c4ff9f, #000000, #22222257);
+}
+
+.bg_skills_grad {
+    background: linear-gradient(0.25turn, #198fbe69, #4281125d, #a76c29);
+    border-radius: 25px;
+    padding: 50px;
+}
+
+#main_footer {
+    background: linear-gradient(#222222, #000000);
+}
+
+/* MEDIAQUERIES */
+
+/* EXTRA SMALL */
+@media(max-width: 576px){
+
+}
+
+/* SMALL */
+@media(max-width: 768px) {
+    .bg_img_about {
+        background-position: center bottom;
+    }
+
+}
+
+/* MEDIUM */
+@media(max-width: 992px){
+
 }
