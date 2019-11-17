@@ -11,35 +11,6 @@
     <link rel="stylesheet" href="./styles/fontawesome.min.css">
     <link rel="stylesheet" type="text/css" href="styles/backgrounds.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-
-    <!-- Frontend email service -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("user_n0boTJaPEFmV70d5O8K6a");
-        })();
-
-        function send(contactForm) {
-            emailjs.send("gmail", "template_j5iOmUOd", {
-                    "from_name": contactForm.name.value,
-                    "from_email": contactForm.email.value,
-                    "topic": contactForm.topic.value,
-                    "message": contactForm.message.value
-                })
-                .then(
-                    function (response) {
-                        console.log("SUCCESS", response);
-                        window.location.replace("contact_sucess.html");
-                    },
-                    function (error) {
-                        console.log("FAILED", error);
-                        window.location.replace("contact_error.html");
-                    }
-                );
-                
-            return false; 
-        }
-    </script>
 </head>
 
 <body>
@@ -85,30 +56,15 @@
         <div class="col-12 col-sm-10 col-md-8 col-xl-6 offset-sm-1 offset-md-2 offset-xl-3 bg-light rounded">
             <h1 class="display-4 text-center pt-3">Contact me</h1>
             <p class="lead px-3">If you decided to work with me to make your digital impact on the world wide web or you just wish to ask me some more questions, do not hesitate to contact me. I will try to reply within 24 hours.</p>
-            <form class="py-4 px-3" onsubmit="return send(this);">
-                <div class="form-group">
-                    <label for="customer_name">Yours Name</label>
-                    <input type="text" class="form-control" id="customer_name" name="name" placeholder="Your Name">
+            <div class="pb-4">
+                <div class="alert alert-danger p-3" role="alert">
+                    Unfortunatlly your message was not sent. Please try again later.
                 </div>
-                <div class="form-group">
-                    <label for="customer_email">Yours email address</label>
-                    <input type="email" class="form-control" id="customer_email" name="email" placeholder="your-email@example.com">
+                <div class="text-center py-2">
+                    <button type="button" onclick="window.location.href='contactus.html'" class="btn btn-primary ">Return to contact page</button>
                 </div>
-                <div class="form-group">
-                    <label for="select_topic">Select topic</label>
-                    <select name="topic" class="form-control" id="select_topic">
-                        <option value="new">New website request</option>
-                        <option value="fix">Fix existing website</option>
-                        <option value="SEO">Search engine optimization</option>
-                        <option value="general">General query/Consultation</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="customer_message">Your Message:</label>
-                    <textarea name="message" class="form-control" id="customer_message" rows="5"></textarea>
-                </div>
-                <button class="btn btn-success" type="submit"> Send! </button>
-            </form>
+            </div>
+            
         </div>
     </main>
 
