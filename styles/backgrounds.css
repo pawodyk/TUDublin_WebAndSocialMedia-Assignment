@@ -1,10 +1,12 @@
+/* PAGE BACKGROUNDS */
+
+/* GENERAL RULES */
+
 body {
     background-color: #222222;
 }
 
-.bg {
-    background-color: #222222;
-}
+/* IMAGES */
 
 .bg_img_home {
     background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/background.jpg");
@@ -37,6 +39,12 @@ body {
     
 }
 
+/* COLORS */
+
+.bg {
+    background-color: #222222;
+}
+
 .bg_transparent {
     background: transparent;
 }
@@ -61,20 +69,10 @@ body {
 
 /* MEDIAQUERIES */
 
-/* EXTRA SMALL */
-@media(max-width: 576px){
-
-}
-
 /* SMALL */
 @media(max-width: 768px) {
     .bg_img_about {
         background-position: center bottom;
     }
-
-}
-
-/* MEDIUM */
-@media(max-width: 992px){
 
 }
